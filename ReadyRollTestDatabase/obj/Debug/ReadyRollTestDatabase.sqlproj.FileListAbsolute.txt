@@ -1,0 +1,8 @@
+\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\bin\Debug\
+\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\bin\Debug\ReadyRollTestDatabase_DeployPackage.ps1
+\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\bin\Debug\ReadyRollTestDatabase.sql
+\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\bin\Debug\ReadyRollTestDatabase.dll
+\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\bin\Debug\ReadyRollTestDatabase.pdb
+\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\obj\Debug\ReadyRollTestDatabase.sql
+\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\obj\Debug\ReadyRollTestDatabase.dll
+\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\obj\Debug\ReadyRollTestDatabase.pdb
