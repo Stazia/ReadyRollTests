@@ -214,4 +214,7 @@
   <ItemGroup>
     <None Include="Migrations\0004_20170511-1339_n23933.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\0005_20170512-1139_n23933.sql" />
+  </ItemGroup>
 </Project>
