@@ -1,13 +1,13 @@
 ﻿/*
 	Target database:	ReadyRollTestDatabase
-	Target instance:	NRKDT59991\LOCALDB#3EBDC8A3
-	Generated date:		11.05.2017 13:39:56
+	Target instance:	NRKDT59991\LOCALDB#C55C74DF
+	Generated date:		12.05.2017 11:26:13
 	Generated on:		NRKDT59991
 	Package version:	(undefined)
 	Migration version:	(n/a)
 	Baseline version:	(n/a)
 	ReadyRoll version:	1.13.23.3401
-	Migrations pending:	1
+	Migrations pending:	0
 
 	IMPORTANT! "SQLCMD Mode" must be activated prior to execution (under the Query menu in SSMS).
 
@@ -33,7 +33,7 @@
 :setvar DatabaseName "ReadyRollTestDatabase"
 :setvar ReleaseVersion ""
 :setvar ForceDeployWithoutBaseline "False"
-:setvar DeployPath "\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\"
+:setvar DeployPath "C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\"
 :setvar DefaultFilePrefix "ReadyRollTestDatabase"
 :setvar DefaultDataPath "C:\Users\n23933\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\ProjectsV13\"
 :setvar DefaultLogPath "C:\Users\n23933\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\ProjectsV13\"
@@ -70,9 +70,9 @@ GO
 -- Beyond this point, no further explicit error handling is required because it can be assumed that SQLCMD mode is enabled
 
 -- As this script has been generated for a specific server instance/database combination, stop execution if there is a mismatch
-IF (@@SERVERNAME != 'NRKDT59991\LOCALDB#3EBDC8A3' OR '$(DatabaseName)' != 'ReadyRollTestDatabase')
+IF (@@SERVERNAME != 'NRKDT59991\LOCALDB#C55C74DF' OR '$(DatabaseName)' != 'ReadyRollTestDatabase')
 BEGIN
-	RAISERROR(N'This script should only be executed on the following server/instance: [NRKDT59991\LOCALDB#3EBDC8A3] (Database: [ReadyRollTestDatabase]). Halting deployment.', 16, 127, N'UNKNOWN') WITH NOWAIT;
+	RAISERROR(N'This script should only be executed on the following server/instance: [NRKDT59991\LOCALDB#C55C74DF] (Database: [ReadyRollTestDatabase]). Halting deployment.', 16, 127, N'UNKNOWN') WITH NOWAIT;
 	RETURN;
 END
 GO
@@ -108,17 +108,6 @@ GO
 -------------------------- END PRE-DEPLOYMENT SCRIPT: "Pre-Deployment\01_Create_Database.sql" ----------------------------
 
 
-
-
-
-
-
-
-
-------------------------------------------------------------------------------------------------------------------------
-------------------------------------------       INCREMENTAL MIGRATIONS       ------------------------------------------
-------------------------------------------------------------------------------------------------------------------------
-
 SET IMPLICIT_TRANSACTIONS, NUMERIC_ROUNDABORT OFF;
 
 SET ANSI_NULLS, ANSI_PADDING, ANSI_WARNINGS, ARITHABORT, CONCAT_NULL_YIELDS_NULL, NOCOUNT, QUOTED_IDENTIFIER ON;
@@ -137,75 +126,9 @@ IF DB_NAME() != '$(DatabaseName)'
   USE [$(DatabaseName)];
 
 GO
-SET IMPLICIT_TRANSACTIONS, NUMERIC_ROUNDABORT OFF;
-
-SET ANSI_NULLS, ANSI_PADDING, ANSI_WARNINGS, ARITHABORT, CONCAT_NULL_YIELDS_NULL, NOCOUNT, QUOTED_IDENTIFIER ON;
-
-GO
-IF DB_NAME() != '$(DatabaseName)'
-  USE [$(DatabaseName)];
-
-GO
-IF EXISTS (SELECT 1 FROM [$(DatabaseName)].[dbo].[__MigrationLogCurrent] WHERE [migration_id] = CAST ('d117eb90-f640-4ee1-b324-d4e83190dcab' AS UNIQUEIDENTIFIER))
-  BEGIN
-    IF @@TRANCOUNT > 0
-      ROLLBACK;
-    RAISERROR ('This script "Migrations\0004_20170511-1339_n23933.sql" has already been executed within the "$(DatabaseName)" database on this server. Halting deployment.', 16, 127);
-    RETURN;
-  END
-
-GO
-PRINT '
-
-***** EXECUTING MIGRATION "Migrations\0004_20170511-1339_n23933.sql", ID: {d117eb90-f640-4ee1-b324-d4e83190dcab} *****';
-
-GO
-
-
------------------------- BEGIN INCREMENTAL MIGRATION: "Migrations\0004_20170511-1339_n23933.sql" -------------------------
-GO
--- <Migration ID="d117eb90-f640-4ee1-b324-d4e83190dcab" />
-GO
-
-
-GO
-PRINT N'Altering [dbo].[Sted]...';
-
-
-GO
-ALTER TABLE [dbo].[Sted] DROP COLUMN [Status];
-
-
-GO
-
-
-------------------------- END INCREMENTAL MIGRATION: "Migrations\0004_20170511-1339_n23933.sql" --------------------------
-
-
-GO
-IF @@TRANCOUNT <> 1
-  BEGIN
-    DECLARE @ErrorMessage AS NVARCHAR (4000);
-    SET @ErrorMessage = 'This migration "Migrations\0004_20170511-1339_n23933.sql" has left the transaction in an invalid or closed state (@@TRANCOUNT=' + CAST (@@TRANCOUNT AS NVARCHAR (10)) + '). Please ensure exactly 1 transaction is open by the end of the migration script.  Rolling-back any pending transactions.';
-    RAISERROR (@ErrorMessage, 16, 127);
-    RETURN;
-  END
-
-INSERT [$(DatabaseName)].[dbo].[__MigrationLog] ([migration_id], [script_checksum], [script_filename], [complete_dt], [applied_by], [deployed], [version], [package_version], [release_version])
-VALUES                                         (CAST ('d117eb90-f640-4ee1-b324-d4e83190dcab' AS UNIQUEIDENTIFIER), 'BB53AAD15AC6E6445A2A5A4F12F10F3EED2E89B8D6D8F8451FE950D99FA4F9D5', '0004_20170511-1339_n23933.sql', SYSDATETIME(), SYSTEM_USER, 1, NULL, '$(PackageVersion)', CASE '$(ReleaseVersion)' WHEN '' THEN NULL ELSE '$(ReleaseVersion)' END);
-
-PRINT '***** FINISHED EXECUTING MIGRATION "Migrations\0004_20170511-1339_n23933.sql", ID: {d117eb90-f640-4ee1-b324-d4e83190dcab} *****
-';
-
-GO
 PRINT '# Committing transaction';
 
 COMMIT TRANSACTION;
-
-GO
-PRINT '1 migration(s) deployed successfully';
-
-GO
 
 GO
 

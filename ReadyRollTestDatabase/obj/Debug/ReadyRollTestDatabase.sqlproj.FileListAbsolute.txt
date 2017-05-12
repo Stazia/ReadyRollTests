@@ -1,8 +1,8 @@
-\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\bin\Debug\
-\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\bin\Debug\ReadyRollTestDatabase_DeployPackage.ps1
-\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\bin\Debug\ReadyRollTestDatabase.sql
-\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\bin\Debug\ReadyRollTestDatabase.dll
-\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\bin\Debug\ReadyRollTestDatabase.pdb
-\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\obj\Debug\ReadyRollTestDatabase.sql
-\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\obj\Debug\ReadyRollTestDatabase.dll
-\\felles.ds.nrk.no\ansatte\n23933\documents\visual studio 2017\Projects\ReadyRollTestDatabase\ReadyRollTestDatabase\obj\Debug\ReadyRollTestDatabase.pdb
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\output\
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\output\ReadyRollTestDatabase_DeployPackage.ps1
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\output\ReadyRollTestDatabase.sql
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\output\ReadyRollTestDatabase.dll
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\output\ReadyRollTestDatabase.pdb
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\obj\Debug\ReadyRollTestDatabase.sql
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\obj\Debug\ReadyRollTestDatabase.dll
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\obj\Debug\ReadyRollTestDatabase.pdb
