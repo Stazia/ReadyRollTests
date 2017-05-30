@@ -6,3 +6,8 @@ C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\output\ReadyRollTestDatabase.pdb
 C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\obj\Debug\ReadyRollTestDatabase.sql
 C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\obj\Debug\ReadyRollTestDatabase.dll
 C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\obj\Debug\ReadyRollTestDatabase.pdb
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\bin\Debug\
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\bin\Debug\ReadyRollTestDatabase_DeployPackage.ps1
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\bin\Debug\ReadyRollTestDatabase.sql
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\bin\Debug\ReadyRollTestDatabase.dll
+C:\NRK\Git\ReadyRollTests\ReadyRollTestDatabase\bin\Debug\ReadyRollTestDatabase.pdb

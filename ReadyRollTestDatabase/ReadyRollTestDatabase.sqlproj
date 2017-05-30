@@ -167,7 +167,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>output\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <DebugSymbols>true</DebugSymbols>
@@ -219,5 +219,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Migrations\0006_20170512-1145_n23933.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\0007_20170515-0913_n23933.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\0008_20170516-1030_n23933.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\0009_20170516-1032_n23933.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\0010_20170530-1055_n23933.sql" />
   </ItemGroup>
 </Project>
